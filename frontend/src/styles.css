@@ -58,6 +58,12 @@ body{font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var
 .change-panel{margin-top:12px;padding:12px;background:#fffaf0;border-radius:6px}
 .panel-actions{margin-top:8px;display:flex;gap:8px}
 
+.developer-tag {
+  font-size: 0.75rem; /* Ya 12px / 14px jo aapko sahi lage */
+  font-weight: normal;
+  opacity: 0.8;       /* Thoda subtle look dene ke liye */
+  margin-left: 8px;   /* Main title se thoda gap */
+}
 
 @media (max-width: 900px){
   .editor-grid{grid-template-columns:1fr}

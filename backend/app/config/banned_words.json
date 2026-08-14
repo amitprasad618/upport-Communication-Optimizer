@@ -1,6 +1,22 @@
 {
   "rules": [
     {
+      "term": "...will help me to investigate the reasons",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Redundant/fluff; this is already implied",
+      "contextual": false
+    },
+    {
+      "term": "Archive",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "close / resolve",
+      "reason": "Incorrect language when referring to case closure",
+      "contextual": true
+    },
+    {
       "term": "I'll surely",
       "category": "redundancy",
       "severity": "medium",
@@ -9,11 +25,27 @@
       "contextual": false
     },
     {
+      "term": "Actually",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Colloquial conversational filler",
+      "contextual": true
+    },
+    {
+      "term": "Additionally",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Also / In addition",
+      "reason": "Overly formal / conditional usage",
+      "contextual": true
+    },
+    {
       "term": "AdSpam team",
       "category": "terminology",
       "severity": "high",
       "replacement": "Trust & Safety team",
-      "reason": "Incorrect internal terminology",
+      "reason": "Outdated internal terminology",
       "contextual": false
     },
     {
@@ -25,12 +57,1597 @@
       "contextual": false
     },
     {
-      "term": "Actually",
+      "term": "Aforementioned",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "the steps mentioned below / previously",
+      "reason": "Too formal / archaic",
+      "contextual": false
+    },
+    {
+      "term": "aid my investigation",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "help",
+      "reason": "Overly dramatic / stiff phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Anomaly",
+      "category": "negative_tone",
+      "severity": "medium",
+      "replacement": "issue / unusual behavior",
+      "reason": "Negative and alarming tone",
+      "contextual": false
+    },
+    {
+      "term": "Apologies for the delay and the inconvenience",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Apologies for the delay",
+      "reason": "Avoid clubbing delays and inconvenience together",
+      "contextual": false
+    },
+    {
+      "term": "Appreciate you following up",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Thanks for checking",
+      "reason": "Redundant fluff",
+      "contextual": false
+    },
+    {
+      "term": "Aptly",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Appropriately",
+      "reason": "Unnatural / overly formal language",
+      "contextual": false
+    },
+    {
+      "term": "As mentioned in the earlier response",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "The issue still persists / [State current status]",
+      "reason": "Sounds dismissive; rephrase affirmatively",
+      "contextual": false
+    },
+    {
+      "term": "As much as I'd want to help you here",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "",
+      "reason": "Conveys helplessness and lack of ownership",
+      "contextual": false
+    },
+    {
+      "term": "Assist",
+      "category": "style",
+      "severity": "low",
+      "replacement": "help",
+      "reason": "Use 'help' for general audiences; reserve 'assist' for specific NA-US contexts",
+      "contextual": true
+    },
+    {
+      "term": "As priority",
+      "category": "redundancy",
+      "severity": "high",
+      "replacement": "",
+      "reason": "Overcommits timelines and team priorities",
+      "contextual": true
+    },
+    {
+      "term": "As soon as I get to hear from them",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "As soon as I hear from them",
+      "reason": "Colloquial and grammatically awkward",
+      "contextual": false
+    },
+    {
+      "term": "ascertain",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "determine / identify",
+      "reason": "Too formal; use simpler phrasing",
+      "contextual": false
+    },
+    {
+      "term": "At your convenience",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Please share the requested details",
+      "reason": "Redundant and counter-productive for resolution timelines",
+      "contextual": false
+    },
+    {
+      "term": "Awaiting",
       "category": "colloquial",
       "severity": "low",
-      "replacement": "",
-      "reason": "Avoid unnecessary conversational wording",
+      "replacement": "waiting for your response",
+      "reason": "Colloquial / stiff phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Basically",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "Usually / Typically",
+      "reason": "Colloquial conversational filler",
+      "contextual": false
+    },
+    {
+      "term": "Basis",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Based on",
+      "reason": "Non-standard prepositional use (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "Below mentioned steps",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "The following steps / The steps below",
+      "reason": "Incorrect grammar",
+      "contextual": false
+    },
+    {
+      "term": "Best regards",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Best / Regards",
+      "reason": "Use either 'Best' or 'Regards', not both",
+      "contextual": false
+    },
+    {
+      "term": "Bug",
+      "category": "jargon",
+      "severity": "medium",
+      "replacement": "issue / code error",
+      "reason": "Technical jargon; avoid using with external clients",
       "contextual": true
+    },
+    {
+      "term": "Chargeable",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Paid feature",
+      "reason": "Sounds like a liability/fine",
+      "contextual": false
+    },
+    {
+      "term": "Check and confirm",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Please check and let me know",
+      "reason": "Redundant fluff",
+      "contextual": false
+    },
+    {
+      "term": "Close loop",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "This is to confirm that",
+      "reason": "Internal corporate jargon",
+      "contextual": false
+    },
+    {
+      "term": "Concerned team",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "[Specify the actual team name]",
+      "reason": "Vague Indianism; specify the actual team",
+      "contextual": false
+    },
+    {
+      "term": "conclusive",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "further",
+      "reason": "Overpromises definitive outcomes before investigation",
+      "contextual": false
+    },
+    {
+      "term": "constructive information",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "information",
+      "reason": "Unnatural adjective pairing",
+      "contextual": false
+    },
+    {
+      "term": "Convert",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "gather insights / share updates",
+      "reason": "Incorrect verb usage in support context",
+      "contextual": false
+    },
+    {
+      "term": "Curious",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "unusual",
+      "reason": "Inappropriate word choice for technical issues",
+      "contextual": false
+    },
+    {
+      "term": "Different than",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Different from",
+      "reason": "Preposition error",
+      "contextual": false
+    },
+    {
+      "term": "do the needful",
+      "category": "incorrect_language",
+      "severity": "high",
+      "replacement": "investigate / resolve this",
+      "reason": "Outdated regional idiom (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "Dig deeper",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Investigate / Research",
+      "reason": "Informal physical metaphor",
+      "contextual": false
+    },
+    {
+      "term": "Documentation team has now made changes",
+      "category": "internal_workflow",
+      "severity": "high",
+      "replacement": "The Help Center Article has been updated",
+      "reason": "Exposing internal processes/teams to external users",
+      "contextual": false
+    },
+    {
+      "term": "Double verify",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Double-check / Cross-check",
+      "reason": "Colloquial / non-standard",
+      "contextual": false
+    },
+    {
+      "term": "Doubly",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Double-check",
+      "reason": "Non-standard phrasing in modern English",
+      "contextual": false
+    },
+    {
+      "term": "Due to which",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Because / As a result",
+      "reason": "Regional idiom (Indianism); rephrase with standard conjunctions",
+      "contextual": false
+    },
+    {
+      "term": "Elaborate",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Could you clarify / What do you mean by",
+      "reason": "Sounds robotic and impersonal",
+      "contextual": false
+    },
+    {
+      "term": "Elucidate",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Clarify / Explain",
+      "reason": "Overly archaic and formal",
+      "contextual": false
+    },
+    {
+      "term": "Engineering came back saying this is working as intended",
+      "category": "internal_workflow",
+      "severity": "high",
+      "replacement": "Our team has confirmed that this feature has been designed to...",
+      "reason": "Shifts blame and exposes internal handoffs",
+      "contextual": false
+    },
+    {
+      "term": "Face any issue",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Have any issues / Experience any issues",
+      "reason": "Colloquial phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Facing",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "persists / recurs",
+      "reason": "Regional idiom (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "Fetch",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "pull / generate / consult",
+      "reason": "Implies physical retrieval",
+      "contextual": false
+    },
+    {
+      "term": "follow-up",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "update",
+      "reason": "Prefer 'update' for clarity",
+      "contextual": false
+    },
+    {
+      "term": "For your better understanding",
+      "category": "condescending",
+      "severity": "high",
+      "replacement": "",
+      "reason": "Condescending; implies the client lacks understanding",
+      "contextual": false
+    },
+    {
+      "term": "From my end",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "I'll check / On our side",
+      "reason": "Regional idiom (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "Fully resolved",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Resolved",
+      "reason": "Redundant; resolution is binary",
+      "contextual": false
+    },
+    {
+      "term": "Funnel down",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Narrow down / Filter",
+      "reason": "Awkward and lacks clear context",
+      "contextual": false
+    },
+    {
+      "term": "Furthermore",
+      "category": "style",
+      "severity": "low",
+      "replacement": "In addition / Also",
+      "reason": "Too literary and formal",
+      "contextual": false
+    },
+    {
+      "term": "Glad to know",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "I am glad that worked for you",
+      "reason": "Colloquial and conversational",
+      "contextual": false
+    },
+    {
+      "term": "Global experts",
+      "category": "vagueness",
+      "severity": "medium",
+      "replacement": "[Specify the actual engineering or support team]",
+      "reason": "Vague corporate jargon",
+      "contextual": false
+    },
+    {
+      "term": "Glitch",
+      "category": "jargon",
+      "severity": "medium",
+      "replacement": "Issue",
+      "reason": "Internal slang / vague terminology",
+      "contextual": false
+    },
+    {
+      "term": "Go ahead",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "Proceed",
+      "reason": "Colloquial filler",
+      "contextual": false
+    },
+    {
+      "term": "Grab",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Pull / Request / Retrieve",
+      "reason": "Informal spoken slang; unsuitable for written support",
+      "contextual": false
+    },
+    {
+      "term": "Greetings of the day",
+      "category": "canned_phrasing",
+      "severity": "medium",
+      "replacement": "Hello / Hi [Name]",
+      "reason": "Sounds robotic and scripted",
+      "contextual": false
+    },
+    {
+      "term": "Happy to help",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Best / Regards",
+      "reason": "Do not use as a formal signature line; use as a closing sentence only",
+      "contextual": true
+    },
+    {
+      "term": "Hard and fast rules",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "Limits / Restrictions",
+      "reason": "Colloquial idiom",
+      "contextual": false
+    },
+    {
+      "term": "Hence",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Then / Therefore",
+      "reason": "Archaic and overly literary",
+      "contextual": false
+    },
+    {
+      "term": "Henceforth",
+      "category": "style",
+      "severity": "low",
+      "replacement": "In the future / Going forward",
+      "reason": "Archaic and overly literary",
+      "contextual": false
+    },
+    {
+      "term": "Hereafter",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Below",
+      "reason": "Archaic and overly literary",
+      "contextual": false
+    },
+    {
+      "term": "Hit production",
+      "category": "jargon",
+      "severity": "high",
+      "replacement": "Once the fix is released / rolled out",
+      "reason": "Internal engineering jargon",
+      "contextual": false
+    },
+    {
+      "term": "Hitch",
+      "category": "jargon",
+      "severity": "medium",
+      "replacement": "Issue",
+      "reason": "Vague informal terminology",
+      "contextual": false
+    },
+    {
+      "term": "Hope this helps",
+      "category": "uncertainty",
+      "severity": "medium",
+      "replacement": "",
+      "reason": "Signals doubt and lack of confidence in resolution",
+      "contextual": false
+    },
+    {
+      "term": "Hope this information was helpful",
+      "category": "uncertainty",
+      "severity": "medium",
+      "replacement": "",
+      "reason": "Signals uncertainty",
+      "contextual": false
+    },
+    {
+      "term": "Hope you're doing good",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Hope you're doing well",
+      "reason": "Grammatical error ('good' vs 'well')",
+      "contextual": false
+    },
+    {
+      "term": "I believe",
+      "category": "uncertainty",
+      "severity": "medium",
+      "replacement": "Based on our investigation / It appears that",
+      "reason": "Sounds speculative; provide verified facts instead",
+      "contextual": true
+    },
+    {
+      "term": "I created a....and noticed/observed",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "[State the test findings directly]",
+      "reason": "Adds unnecessary procedural fluff",
+      "contextual": false
+    },
+    {
+      "term": "I'd",
+      "category": "style",
+      "severity": "low",
+      "replacement": "I would / I had",
+      "reason": "Spell out contractions in formal communication",
+      "contextual": true
+    },
+    {
+      "term": "I do not have much insight into",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "I'll check and get back to you",
+      "reason": "Conveys incompetence; investigate before answering",
+      "contextual": false
+    },
+    {
+      "term": "I have digged deep",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "I investigated",
+      "reason": "Informal and grammatically awkward fluff",
+      "contextual": false
+    },
+    {
+      "term": "I just wanted to follow up and check if you've had a chance",
+      "category": "wordiness",
+      "severity": "medium",
+      "replacement": "I wanted to check if you were able to",
+      "reason": "Overly wordy and passive",
+      "contextual": false
+    },
+    {
+      "term": "I request you to",
+      "category": "condescending",
+      "severity": "high",
+      "replacement": "Could you please / I recommend that you",
+      "reason": "Sounds demanding and authoritative rather than polite",
+      "contextual": false
+    },
+    {
+      "term": "I think",
+      "category": "uncertainty",
+      "severity": "medium",
+      "replacement": "Our findings indicate",
+      "reason": "Sounds speculative; verify facts before sharing",
+      "contextual": true
+    },
+    {
+      "term": "I will be happy to",
+      "category": "style",
+      "severity": "low",
+      "replacement": "I'm happy to help",
+      "reason": "Use sparingly (maximum once per case)",
+      "contextual": true
+    },
+    {
+      "term": "I will be more than happy to",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "I'll be happy to",
+      "reason": "Excessive and unquantifiable fluff",
+      "contextual": false
+    },
+    {
+      "term": "I will get back you with a proper solution",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "I'll get back to you with options",
+      "reason": "Implies that previous solutions were improper",
+      "contextual": false
+    },
+    {
+      "term": "I won't be able to comment with certainity",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "I am looking into this and will share more details",
+      "reason": "Robotic, negative, and dismissive approach",
+      "contextual": false
+    },
+    {
+      "term": "I would not be able to provide",
+      "category": "uncertainty",
+      "severity": "low",
+      "replacement": "I cannot provide",
+      "reason": "Excessively indirect and formal",
+      "contextual": false
+    },
+    {
+      "term": "I'd like to inform",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Conversational filler; state the fact directly",
+      "contextual": false
+    },
+    {
+      "term": "I'll certainly",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "I will",
+      "reason": "Redundant filler adverb",
+      "contextual": false
+    },
+    {
+      "term": "I'll definitely",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "I will",
+      "reason": "Redundant filler adverb",
+      "contextual": false
+    },
+    {
+      "term": "I'll hop in to help",
+      "category": "colloquial",
+      "severity": "medium",
+      "replacement": "I'll be glad to help",
+      "reason": "Excessively casual slang",
+      "contextual": false
+    },
+    {
+      "term": "I’ll look into it right away and share the findings",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Stating the obvious expectation",
+      "contextual": false
+    },
+    {
+      "term": "I'll sync with them",
+      "category": "jargon",
+      "severity": "medium",
+      "replacement": "I'll reach out to them",
+      "reason": "Internal corporate jargon",
+      "contextual": false
+    },
+    {
+      "term": "I'll update you by tomorrow",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "I'll share an update with you by tomorrow",
+      "reason": "Grammatically incorrect object placement",
+      "contextual": false
+    },
+    {
+      "term": "I'm afraid",
+      "category": "negative_tone",
+      "severity": "medium",
+      "replacement": "[State the fact directly with workaround]",
+      "reason": "Unnecessarily negative word choice",
+      "contextual": false
+    },
+    {
+      "term": "I'm in constant touch with Engineering team",
+      "category": "vagueness",
+      "severity": "low",
+      "replacement": "I'm waiting for more information from the engineering team",
+      "reason": "Excessive and dramatic phrasing",
+      "contextual": false
+    },
+    {
+      "term": "I'm not aware",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "I'm verifying this detail",
+      "reason": "Projects lack of confidence and product knowledge",
+      "contextual": false
+    },
+    {
+      "term": "I'm not sure",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "I'm investigating this behavior",
+      "reason": "Projects lack of confidence and process knowledge",
+      "contextual": false
+    },
+    {
+      "term": "I’m unable to find the reason",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "I am investigating the cause",
+      "reason": "Sounds like giving up or withholding information",
+      "contextual": false
+    },
+    {
+      "term": "It's a valid ask",
+      "category": "condescending",
+      "severity": "high",
+      "replacement": "",
+      "reason": "Judgmental; all customer feature requests are equally valid",
+      "contextual": false
+    },
+    {
+      "term": "I’ve checked this with my team",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "I verified that",
+      "reason": "Redundant internal validation; speak with personal ownership",
+      "contextual": false
+    },
+    {
+      "term": "ideally",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Normally / Usually",
+      "reason": "Reserve 'ideally' strictly for future recommendations, not standard state",
+      "contextual": true
+    },
+    {
+      "term": "If in case",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "If / In case",
+      "reason": "Redundant tautology",
+      "contextual": false
+    },
+    {
+      "term": "if nothing works",
+      "category": "negative_tone",
+      "severity": "high",
+      "replacement": "Please let me know if you need any additional assistance",
+      "reason": "Frames support as a helpless last resort",
+      "contextual": false
+    },
+    {
+      "term": "If the error still persists",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "If the issue persists",
+      "reason": "Redundant repetition ('still' + 'persists')",
+      "contextual": false
+    },
+    {
+      "term": "In accordance",
+      "category": "style",
+      "severity": "low",
+      "replacement": "According to",
+      "reason": "Overly stiff and bookish",
+      "contextual": false
+    },
+    {
+      "term": "In mind",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Let me know your thoughts",
+      "reason": "Wordy conversational filler",
+      "contextual": false
+    },
+    {
+      "term": "In order to provide more clarity on your query regarding",
+      "category": "wordiness",
+      "severity": "medium",
+      "replacement": "To clarify your question about",
+      "reason": "Excessively wordy present continuous construction",
+      "contextual": false
+    },
+    {
+      "term": "product specialist",
+      "category": "vagueness",
+      "severity": "medium",
+      "replacement": "Engineering team / Product team",
+      "reason": "Vague title that implies front-line agents lack expertise",
+      "contextual": false
+    },
+    {
+      "term": "Internal team",
+      "category": "internal_workflow",
+      "severity": "high",
+      "replacement": "[Specify exact team or say 'internally']",
+      "reason": "Vague internal terminology",
+      "contextual": true
+    },
+    {
+      "term": "Internal tools",
+      "category": "internal_workflow",
+      "severity": "medium",
+      "replacement": "internal reporting / I tested",
+      "reason": "Sounds secretive to clients",
+      "contextual": false
+    },
+    {
+      "term": "Intimate",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "inform / share an update",
+      "reason": "Non-standard business English (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "Internal experts",
+      "category": "vagueness",
+      "severity": "medium",
+      "replacement": "Product team / Engineering team",
+      "reason": "Vague corporate jargon",
+      "contextual": false
+    },
+    {
+      "term": "Irated",
+      "category": "incorrect_language",
+      "severity": "high",
+      "replacement": "upset / unhappy",
+      "reason": "Non-existent word / overly negative",
+      "contextual": false
+    },
+    {
+      "term": "is very less",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "is very low",
+      "reason": "Grammatical error / regional idiom",
+      "contextual": false
+    },
+    {
+      "term": "issue is surfaced",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "issue was observed / occurred",
+      "reason": "Awkward passive phrasing",
+      "contextual": false
+    },
+    {
+      "term": "issue you have referred",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "issue you reported",
+      "reason": "Awkward verb choice",
+      "contextual": false
+    },
+    {
+      "term": "in the meantime",
+      "category": "style",
+      "severity": "low",
+      "replacement": "While I check / In parallel",
+      "reason": "Use only when describing parallel actions taken by the agent",
+      "contextual": true
+    },
+    {
+      "term": "It looks like",
+      "category": "uncertainty",
+      "severity": "low",
+      "replacement": "[Use only when probing an unclear request]",
+      "reason": "Avoid stating findings tentatively unless actively probing",
+      "contextual": true
+    },
+    {
+      "term": "It'd",
+      "category": "style",
+      "severity": "low",
+      "replacement": "It would / It had",
+      "reason": "Avoid contractions in professional written communications",
+      "contextual": true
+    },
+    {
+      "term": "It will be highly appreciable",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "I would appreciate it",
+      "reason": "Colloquial and grammatically non-standard",
+      "contextual": false
+    },
+    {
+      "term": "Just a heads up",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Please note",
+      "reason": "Conversational filler",
+      "contextual": false
+    },
+    {
+      "term": "Just wanted to check if you had a chance to go through my previous email",
+      "category": "redundancy",
+      "severity": "medium",
+      "replacement": "[State the direct ask/question]",
+      "reason": "Passive-aggressive and wordy",
+      "contextual": false
+    },
+    {
+      "term": "Just wanted to update you",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Redundant conversational filler",
+      "contextual": false
+    },
+    {
+      "term": "Keep a tab",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "I'm tracking the progress",
+      "reason": "Passive and colloquial phrasing",
+      "contextual": false
+    },
+    {
+      "term": "keep you posted",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "I'll send an update as soon as",
+      "reason": "Informal spoken idiom",
+      "contextual": false
+    },
+    {
+      "term": "Kick start",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "Start / Proceed / Begin",
+      "reason": "Too informal for email support",
+      "contextual": false
+    },
+    {
+      "term": "Kindly",
+      "category": "style",
+      "severity": "medium",
+      "replacement": "Please",
+      "reason": "Archaic and overused; prefer 'Please' (max once per email)",
+      "contextual": false
+    },
+    {
+      "term": "Like you mentioned",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "As you mentioned",
+      "reason": "Grammatical misuse of 'like' instead of 'as'",
+      "contextual": false
+    },
+    {
+      "term": "Looking forward to hearing from you",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Can appear pushy during active troubleshooting",
+      "contextual": false
+    },
+    {
+      "term": "Low-down",
+      "category": "colloquial",
+      "severity": "medium",
+      "replacement": "Summary / Overview",
+      "reason": "Slang phrase with dual ambiguous meanings",
+      "contextual": false
+    },
+    {
+      "term": "Malicious",
+      "category": "negative_tone",
+      "severity": "high",
+      "replacement": "Suspicious / Potentially harmful",
+      "reason": "Excessively accusatory and alarming",
+      "contextual": false
+    },
+    {
+      "term": "Meanwhile",
+      "category": "style",
+      "severity": "low",
+      "replacement": "In the meantime / In parallel",
+      "reason": "Overly literary tone",
+      "contextual": false
+    },
+    {
+      "term": "More than happy",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Happy",
+      "reason": "Unquantifiable exaggeration",
+      "contextual": false
+    },
+    {
+      "term": "Moreover",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Also / In addition",
+      "reason": "Overly literary and formal",
+      "contextual": false
+    },
+    {
+      "term": "Moved to production",
+      "category": "jargon",
+      "severity": "high",
+      "replacement": "Once the fix is released / rolled out",
+      "reason": "Internal developer jargon",
+      "contextual": false
+    },
+    {
+      "term": "My bad",
+      "category": "colloquial",
+      "severity": "high",
+      "replacement": "I apologize for the oversight",
+      "reason": "Unprofessional casual slang",
+      "contextual": false
+    },
+    {
+      "term": "My team",
+      "category": "ownership",
+      "severity": "medium",
+      "replacement": "I will troubleshoot this issue",
+      "reason": "Diffuses personal ownership and sounds deflective",
+      "contextual": false
+    },
+    {
+      "term": "Nevertheless",
+      "category": "style",
+      "severity": "low",
+      "replacement": "However / That said",
+      "reason": "Overly literary",
+      "contextual": false
+    },
+    {
+      "term": "Nope",
+      "category": "colloquial",
+      "severity": "high",
+      "replacement": "This is not intended behavior",
+      "reason": "Casual slang unsuitable for customer support",
+      "contextual": false
+    },
+    {
+      "term": "On a side note",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "Please note that",
+      "reason": "Informal conversational filler",
+      "contextual": false
+    },
+    {
+      "term": "Our best bet is",
+      "category": "colloquial",
+      "severity": "medium",
+      "replacement": "We recommend / Options include",
+      "reason": "Gambling idiom; unsuited for technical recommendations",
+      "contextual": false
+    },
+    {
+      "term": "Overcome the issue",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Resolve the issue / Find the root cause",
+      "reason": "Unnatural English phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Owing to this",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Because",
+      "reason": "Overly legalistic and stiff",
+      "contextual": false
+    },
+    {
+      "term": "Peer / Peer Group",
+      "category": "internal_workflow",
+      "severity": "medium",
+      "replacement": "Colleagues / Team",
+      "reason": "Confuses client by exposing internal hierarchy",
+      "contextual": false
+    },
+    {
+      "term": "Per the update",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "I have an update for you",
+      "reason": "Overused and repetitive phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Please be rest assured",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "I will share an update once we have more details",
+      "reason": "Grammatically incorrect regional idiom (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "Please don't mention the same",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "You're welcome / Don't mention it",
+      "reason": "Grammatically awkward regional idiom",
+      "contextual": false
+    },
+    {
+      "term": "Please let me know if anymore information is required",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Please let me know if you need more information",
+      "reason": "Awkward grammatical construction",
+      "contextual": false
+    },
+    {
+      "term": "Post which",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "After which / Following that / Then",
+      "reason": "Regional idiom (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "Problem",
+      "category": "negative_tone",
+      "severity": "medium",
+      "replacement": "Issue / Behavior",
+      "reason": "Inherently negative connotation",
+      "contextual": false
+    },
+    {
+      "term": "Proceed further",
+      "category": "vagueness",
+      "severity": "low",
+      "replacement": "Investigate further / Continue",
+      "reason": "Vague redundant phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Queries",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Questions",
+      "reason": "Overly technical unless referring specifically to database/DRX queries",
+      "contextual": true
+    },
+    {
+      "term": "Read the email conversation",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Read the previous emails",
+      "reason": "Conversations are spoken; written exchanges are emails",
+      "contextual": false
+    },
+    {
+      "term": "Reconfirm",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Confirm / Verify / Double-check",
+      "reason": "Colloquial redundancy",
+      "contextual": false
+    },
+    {
+      "term": "Refer to attached",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "I've attached a screenshot for your reference",
+      "reason": "Abrupt and passive phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Revert",
+      "category": "incorrect_language",
+      "severity": "high",
+      "replacement": "Reply / Write back",
+      "reason": "Incorrect regional usage ('revert' means return to a former state)",
+      "contextual": false
+    },
+    {
+      "term": "Revisit",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Follow up on / Re-examine",
+      "reason": "Misused in place of standard follow-up phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Segregate",
+      "category": "incorrect_language",
+      "severity": "high",
+      "replacement": "Isolate / Separate",
+      "reason": "Inappropriate word choice in troubleshooting context",
+      "contextual": false
+    },
+    {
+      "term": "Send along / over a screenshot",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "Could you share a screenshot?",
+      "reason": "Colloquial phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Senior member of the team",
+      "category": "internal_workflow",
+      "severity": "medium",
+      "replacement": "Internally / Product team",
+      "reason": "Exposes unnecessary internal hierarchy",
+      "contextual": false
+    },
+    {
+      "term": "Seeing",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "I noticed / I observed",
+      "reason": "Incorrect dynamic verb form in technical reporting",
+      "contextual": false
+    },
+    {
+      "term": "Showing up",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "Appears / Renders",
+      "reason": "Informal regional phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Sorry I couldn't be of much help",
+      "category": "negative_tone",
+      "severity": "high",
+      "replacement": "Let me know if there is anything else I can help you with",
+      "reason": "Projects complete helplessness",
+      "contextual": false
+    },
+    {
+      "term": "spam",
+      "category": "negative_tone",
+      "severity": "medium",
+      "replacement": "Invalid activity",
+      "reason": "Harsh and accusatory tone",
+      "contextual": false
+    },
+    {
+      "term": "Strange",
+      "category": "negative_tone",
+      "severity": "medium",
+      "replacement": "Unusual",
+      "reason": "Negative and unprofessional tone",
+      "contextual": false
+    },
+    {
+      "term": "Streamline",
+      "category": "vagueness",
+      "severity": "low",
+      "replacement": "Investigate / Pull a report / Reproduce",
+      "reason": "Vague corporate buzzword",
+      "contextual": false
+    },
+    {
+      "term": "Suggest you",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Recommend that you / Suggest that you",
+      "reason": "Grammatical error (missing 'that')",
+      "contextual": false
+    },
+    {
+      "term": "Suppose",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "For example",
+      "reason": "Colloquial / regional idiom",
+      "contextual": false
+    },
+    {
+      "term": "Thank you for writing back",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Sounds sarcastic/canned in repeated back-and-forth threads",
+      "contextual": false
+    },
+    {
+      "term": "Thanks and Regards",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Thanks / Regards",
+      "reason": "Redundant combination; pick one",
+      "contextual": false
+    },
+    {
+      "term": "Thanks for contacting DFP Support",
+      "category": "terminology",
+      "severity": "high",
+      "replacement": "Publisher Support",
+      "reason": "Outdated product branding",
+      "contextual": false
+    },
+    {
+      "term": "Thanks for your understanding and patience",
+      "category": "canned_phrasing",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Overused canned expression; use only in genuine severe delays",
+      "contextual": true
+    },
+    {
+      "term": "That being said",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Conversational filler",
+      "contextual": false
+    },
+    {
+      "term": "The report was complete at around",
+      "category": "incorrect_language",
+      "severity": "low",
+      "replacement": "The report was generated at [Time]",
+      "reason": "Prepositional error ('at around')",
+      "contextual": false
+    },
+    {
+      "term": "The same",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "It / The above",
+      "reason": "Stilted legalistic regional usage (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "The case was lost in our queue",
+      "category": "internal_workflow",
+      "severity": "high",
+      "replacement": "Apologies for the delay; I've taken over this case",
+      "reason": "Exposes internal mismanagement to the customer",
+      "contextual": false
+    },
+    {
+      "term": "Thereby",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Thus / As a result",
+      "reason": "Archaic and overly literary",
+      "contextual": false
+    },
+    {
+      "term": "Thereon",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Following that / Soon",
+      "reason": "Archaic legal tone",
+      "contextual": false
+    },
+    {
+      "term": "This will help me to troubleshoot the issue in a better way towards an optimal resolution",
+      "category": "redundancy",
+      "severity": "medium",
+      "replacement": "",
+      "reason": "Excessive fluff stating what is already implied",
+      "contextual": false
+    },
+    {
+      "term": "This is the only alternative for such issues",
+      "category": "negative_tone",
+      "severity": "high",
+      "replacement": "The available options include",
+      "reason": "Overly rigid and dismissive",
+      "contextual": false
+    },
+    {
+      "term": "Thus",
+      "category": "style",
+      "severity": "low",
+      "replacement": "Because / This happens because",
+      "reason": "Overly literary",
+      "contextual": false
+    },
+    {
+      "term": "Till",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "Until",
+      "reason": "Too informal for written support",
+      "contextual": false
+    },
+    {
+      "term": "To better manage our ticketing system",
+      "category": "internal_workflow",
+      "severity": "high",
+      "replacement": "I'm going to close this ticket for now",
+      "reason": "Exposes internal ticket management metrics",
+      "contextual": false
+    },
+    {
+      "term": "To keep the queues clean",
+      "category": "internal_workflow",
+      "severity": "high",
+      "replacement": "I'll close the case for now",
+      "reason": "Absolute ban: reveals internal queue management",
+      "contextual": false
+    },
+    {
+      "term": "To my certain knowledge it isn't possible",
+      "category": "redundancy",
+      "severity": "medium",
+      "replacement": "This feature is currently not supported",
+      "reason": "Wordy and awkward certainty claim",
+      "contextual": false
+    },
+    {
+      "term": "to reiterate",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Redundant if bottom line is already stated clearly",
+      "contextual": false
+    },
+    {
+      "term": "To the best of my knowledge",
+      "category": "uncertainty",
+      "severity": "medium",
+      "replacement": "",
+      "reason": "Shows uncertainty; verify facts before responding",
+      "contextual": false
+    },
+    {
+      "term": "Unfortunately",
+      "category": "negative_tone",
+      "severity": "medium",
+      "replacement": "[State supported capabilities directly]",
+      "reason": "Inherently negative framing; highlight workarounds",
+      "contextual": true
+    },
+    {
+      "term": "Unsure",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "I am investigating",
+      "reason": "Signals lack of knowledge and process ownership",
+      "contextual": false
+    },
+    {
+      "term": "Upgradation",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "Upgrade / Development",
+      "reason": "Non-standard word (Indianism)",
+      "contextual": false
+    },
+    {
+      "term": "a great HC article",
+      "category": "style",
+      "severity": "low",
+      "replacement": "We have an article that outlines",
+      "reason": "Subjective; avoid 'great' unless specifically notable",
+      "contextual": true
+    },
+    {
+      "term": "we'd be forced to",
+      "category": "internal_workflow",
+      "severity": "high",
+      "replacement": "I will proceed with closing this case",
+      "reason": "Exposes rigid internal closure procedures",
+      "contextual": false
+    },
+    {
+      "term": "Weird",
+      "category": "uncertainty",
+      "severity": "high",
+      "replacement": "Not working as intended / Unusual",
+      "reason": "Unprofessional and conveys uncertainty",
+      "contextual": false
+    },
+    {
+      "term": "While I'm at",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Conversational filler",
+      "contextual": false
+    },
+    {
+      "term": "Workaround",
+      "category": "terminology",
+      "severity": "low",
+      "replacement": "Options / Alternatives",
+      "reason": "Technical jargon; 'options' translates cleaner across locales",
+      "contextual": true
+    },
+    {
+      "term": "you have a great day ahead",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "Have a great day",
+      "reason": "'ahead' is redundant",
+      "contextual": false
+    },
+    {
+      "term": "Yup",
+      "category": "colloquial",
+      "severity": "high",
+      "replacement": "Yes",
+      "reason": "Casual slang",
+      "contextual": false
+    },
+    {
+      "term": "Yeah",
+      "category": "colloquial",
+      "severity": "high",
+      "replacement": "Yes",
+      "reason": "Casual slang",
+      "contextual": false
+    },
+    {
+      "term": "Yep",
+      "category": "colloquial",
+      "severity": "high",
+      "replacement": "Yes",
+      "reason": "Casual slang",
+      "contextual": false
+    },
+    {
+      "term": "You may",
+      "category": "style",
+      "severity": "low",
+      "replacement": "You can",
+      "reason": "Use conditionally when presenting alternative options",
+      "contextual": true
+    },
+    {
+      "term": "You seem",
+      "category": "vagueness",
+      "severity": "medium",
+      "replacement": "You have [summarize specific issues]",
+      "reason": "Vague unless summarizing multi-part requests",
+      "contextual": true
+    },
+    {
+      "term": "At your disposal",
+      "category": "redundancy",
+      "severity": "medium",
+      "replacement": "",
+      "reason": "Too formal, rigid, and outdated",
+      "contextual": false
+    },
+    {
+      "term": "Out of Scope",
+      "category": "negative_tone",
+      "severity": "high",
+      "replacement": "Limited insights / Outside supported features",
+      "reason": "Dismissive and negative phrasing",
+      "contextual": false
+    },
+    {
+      "term": "Let me explain this to you",
+      "category": "condescending",
+      "severity": "high",
+      "replacement": "I would be happy to clarify this for you",
+      "reason": "Perceived as patronizing and condescending",
+      "contextual": false
+    },
+    {
+      "term": "TSM",
+      "category": "banned_acronym",
+      "severity": "high",
+      "replacement": "Partner Solutions Team",
+      "reason": "Internal acronym; banned in external communications",
+      "contextual": false
+    },
+    {
+      "term": "GCC",
+      "category": "banned_acronym",
+      "severity": "high",
+      "replacement": "Partner Solutions Team",
+      "reason": "Internal acronym; banned in external communications",
+      "contextual": false
+    },
+    {
+      "term": "GCARE",
+      "category": "banned_acronym",
+      "severity": "high",
+      "replacement": "Partner Solutions Team",
+      "reason": "Internal acronym; banned in external communications",
+      "contextual": false
+    },
+    {
+      "term": "Technical Solutions Manager",
+      "category": "banned_title",
+      "severity": "high",
+      "replacement": "Partner Solutions Team",
+      "reason": "Internal job title; banned in external communications",
+      "contextual": false
+    },
+    {
+      "term": "Frustrated",
+      "category": "negative_tone",
+      "severity": "high",
+      "replacement": "",
+      "reason": "Avoid echoing or amplifying negative emotions",
+      "contextual": false
+    },
+    {
+      "term": "Good news",
+      "category": "redundancy",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Biased conversational filler; deliver facts directly",
+      "contextual": false
     }
   ]
 }
+
