@@ -1,8 +1,36 @@
 {
-  "banned_words": [
-    "ASAP",
-    "urgent",
-    "dummy-word",
-    "do it yourself"
+  "rules": [
+    {
+      "term": "I'll surely",
+      "category": "redundancy",
+      "severity": "medium",
+      "replacement": "I will",
+      "reason": "Redundant / colloquial",
+      "contextual": false
+    },
+    {
+      "term": "AdSpam team",
+      "category": "terminology",
+      "severity": "high",
+      "replacement": "Trust & Safety team",
+      "reason": "Incorrect internal terminology",
+      "contextual": false
+    },
+    {
+      "term": "I affirm",
+      "category": "incorrect_language",
+      "severity": "medium",
+      "replacement": "I confirm",
+      "reason": "Incorrect language",
+      "contextual": false
+    },
+    {
+      "term": "Actually",
+      "category": "colloquial",
+      "severity": "low",
+      "replacement": "",
+      "reason": "Avoid unnecessary conversational wording",
+      "contextual": true
+    }
   ]
 }
