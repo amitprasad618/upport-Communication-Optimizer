@@ -1,0 +1,8 @@
+{{INSTRUCTIONS}}
+
+# Guidance placeholder for the resolution optimizer prompt.
+# We'll craft a prompt that instructs the LLM to:
+# - preserve technical terms, IDs, metrics, URLs, and dates
+# - never invent facts
+# - improve clarity, tone, grammar
+# - list exactly which words/phrases were changed
